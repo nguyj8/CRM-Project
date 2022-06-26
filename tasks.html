@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tasks.css">
+
+    <title>Tasks</title>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav>
+        <div class="logo">
+            <h1>Swift</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="settings.html">Settings</a></li>
+        </ul>
+        <div class="tab">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="head"></div>
+            <h2>Agenda</h2>
+            <div class="user-input">
+                <input id="input" type="text"><button onclick="addItem()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tasks"></div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="tasks.js"></script>
+</body>
+</html>
