@@ -1,0 +1,168 @@
+/*
+.root
+{
+    --darkest: #221E22;
+    --darker: #808080;
+    --dark: #B9C2B;
+    --light: #EDF2F4;
+    --lighter: #D9E4E8;
+    --lightest: #FFFFFF;
+    --turquoise: #72E1D1;
+    --lightblue: #06ABC5;
+    --red: #E4112A;
+}
+*/
+
+*
+{
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* Calendar */
+button
+{
+    width: 75px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px #D9E4E8;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #221E22;
+}
+
+#header
+{
+    padding: 10px;
+    color: #221E22;
+    font-size: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#container
+{
+    width: 770px;
+}
+
+#backButton, #nextButton
+{
+    position: relative;
+    left: 295px;
+}
+
+#weekdays
+{
+    width: 100%;
+    display: flex;
+    color: #221E22;
+}
+
+#weekdays div
+{
+    width: 100px;
+    padding: 10px;
+}
+
+#calendar
+{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.day
+{
+    width: 100px;
+    padding: 10px;
+    height: 100px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    margin: 5px;
+    box-shadow: 0px 0px 3px #221E22;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.day:hover
+{
+    background-color: #B9C2BB;
+}
+
+.day + #currentDay
+{
+    background-color: #EDF2F4;
+}
+
+.event
+{
+    font-size: 10px;
+    padding: 3px;
+    background-color: #0975e8;
+    color: #FFFFFF;
+    border-radius: 5px;
+    max-height: 55px;
+    overflow: hidden;
+}
+
+.padding
+{
+    /* Override */
+    cursor: default !important; 
+    background-color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+#newEventModal, #deleteEventModal
+{
+    display: none;
+    z-index: 20;
+    padding: 25px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 3px #221E22;
+    border-radius: 5px;
+    width: 350px;
+    top: 100px;
+    left: calc(50% - 175px);
+    position: absolute;
+}
+
+#eventTitleInput
+{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 3px #808080;
+}
+
+#eventTitleInput.error
+{
+    border: 2px solid #E4112A;
+}
+
+#eventText
+{
+    font-size: 14px;
+}
+
+#modalBackDrop
+{
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+}
