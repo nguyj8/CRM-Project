@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="planner.css">
 
-    <title>Tasks</title>
+    <title>Planner</title>
 </head>
 <body>
     <!--Navigation Bar-->
     <nav>
         <div class="logo">
-            <h1>Swift</h1>
+            <h1>Federated Insurance</h1>
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Dashboard</a></li>
-            <li><a href="#">Planner</a></li>
             <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="#">Planner</a></li>
+            <li><a href="reports.html">Reports</a></li>
             <li><a href="settings.html">Settings</a></li>
         </ul>
         <div class="tab">
@@ -27,61 +31,47 @@
             <div class="line3"></div>
         </div>
     </nav>
-    <div class="cont">
+    <div id="container">
         <div id="header">
-            <div id="monthDisplay"></div>
-            <div>
-                <button id="backButton">Back</button>
-                <button id="nextButton">Next</button>
-            </div>
+          <div id="monthDisplay"></div>
+          <div>
+            <button id="backButton">Back</button>
+            <button id="nextButton">Next</button>
+          </div>
         </div>
-
+  
         <div id="weekdays">
-            <div>Sunday</div>
-            <div>Monday</div>
-            <div>Tuesday</div>
-            <div>Wednesday</div>
-            <div>Thursday</div>
-            <div>Friday</div>
-            <div>Saturday</div>
+          <div>Sunday</div>
+          <div>Monday</div>
+          <div>Tuesday</div>
+          <div>Wednesday</div>
+          <div>Thursday</div>
+          <div>Friday</div>
+          <div>Saturday</div>
         </div>
-
+  
         <div id="calendar"></div>
-    <div>
-
-    <div id="newEventModal"></div>
+      </div>
+  
+      <div id="newEventModal">
         <h2>New Event</h2>
-
-        <input id="eventTileInput" placeholder="Event Title">
-
+  
+        <input id="eventTitleInput" placeholder="Event Title" />
+  
         <button id="saveButton">Save</button>
         <button id="cancelButton">Cancel</button>
-    </div>
-    
-    <div id="deleteEventModal">
+      </div>
+  
+      <div id="deleteEventModal">
         <h2>Event</h2>
-
+  
         <p id="eventText"></p>
-
+  
         <button id="deleteButton">Delete</button>
         <button id="closeButton">Close</button>
-    </div>
-
-    <div id="modalBackDrop"></div>
-
-    </div>
-
-    <div class="container">
-        <div class="head"></div>
-            <h2>Agenda</h2>
-            <div class="user-input">
-                <input id="input" type="text"><button onclick="addItem()">Submit</button>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="tasks"></div>
-    </div>
+      </div>
+  
+      <div id="modalBackDrop"></div>
 
     <script src="app.js"></script>
     <script src="planner.js"></script>
