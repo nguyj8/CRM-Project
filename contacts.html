@@ -7,7 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacts.css">
+    <script src="https://kit.fontawesome.com/ba51fce9eb.js" crossorigin="anonymous"></script>
+
 
     <title>Contacts</title>
 </head>
@@ -19,8 +23,8 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.html">Dashboard</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-            <li><a href="#">Planner</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
             <li><a href="reports.html">Reports</a></li>
             <li><a href="settings.html">Settings</a></li>
         </ul>
@@ -30,3 +34,41 @@
             <div class="line3"></div>
         </div>
     </nav>
+        
+    <h2>Contact List</h2>
+    <div class="cm-table-container" id="cmsTableContainer">
+        <div class="cm-table-row">
+            <div class="cm-table-column cm-name cm-header">Name</div>
+            <div class="cm-table-column cm-phone cm-header">Phone</div>
+            <div class="cm-table-column cm-email cm-header">Email</div>
+            <div class="cm-table-column cm-address cm-header">Address</div>
+            <div class="cm-table-column cm-header cm-add-entry" id="cmAddNewEntry">+</div>
+            <div class="cm-table-column cm-header cm-delete" id="cmDelete">Delete</div>
+        </div>
+        <span id="tableBody"></span>
+    </div>
+    <div class="disable-modal" id="backdrop"></div>
+    <div class="disable-modal" id="newPersonModal">
+        <h1>Add Contact</h1>
+        <label for="newPersonName">Name</label>
+        <input type="text" id="newPersonName" placeholder="Full Name" required>
+
+        <label for="newPersonPhone">Phone</label>
+        <input type="text" id="newPersonPhone" placeholder="Phone Number"required>
+
+        <label for="newPersonEmail">Email</label>
+        <input type="text" id="newPersonEmail" placeholder="Email Address"required>
+
+        <label for="newPersonAddress">Address</label>
+        <input type="text" id="newPersonAddress" placeholder="Home Address"required>
+
+        <label for="newPersonNotes">Notes</label>
+        <input type="text" class="cm-notes" id="newPersonNotes" placeholder="Notes">
+
+        <button id="newPersonSubmitButton">Submit</button>
+        <button id="newCancelButton">Cancel</button>
+    </div>
+    <script src="app.js"></script>
+    <script src="contacts.js"></script>
+</body>
+</html>
