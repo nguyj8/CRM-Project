@@ -1,0 +1,87 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.container
+{
+    margin-left: 21rem;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1.2rem; 
+    gap: 25px;
+}
+
+.cardOne img
+{
+    width: 350px;
+    height: 300px; 
+}
+.cardTwo img
+{
+    width: 350px;
+    height: 300px; 
+}
+.cardThree img
+{
+    width: 350px;
+    height: 300px;  
+}
+.cardFour img
+{
+    width: 350px;
+    height: 300px; 
+}
+.cardFive img
+{
+    width: 350px;
+    height: 300px; 
+}
+.cardSix img
+{
+    width: 350px;
+    height: 300px; 
+}
+
+.container span
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Inner HTML page linked with Text - No Nav Bar */
+
+.innerPageOne a
+{
+    font-size: 20px;
+    color: #221E22;
+}
+.innerPageTwo a
+{
+    font-size: 20px;
+    color: #221E22;
+}
+.innerPageThree a
+{
+    font-size: 20px;
+    color: #221E22;
+}
+.innerPageFour a
+{
+    font-size: 20px;
+    color: #221E22;
+}
+.innerPageFive a
+{
+    font-size: 20px;
+    color: #221E22;
+}
+.innerPageSix a
+{
+    font-size: 20px;
+    color: #221E22;
+}

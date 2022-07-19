@@ -7,35 +7,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contacts.css">
     <script src="https://kit.fontawesome.com/ba51fce9eb.js" crossorigin="anonymous"></script>
 
-
     <title>Contacts</title>
 </head>
+
 <body>
-    <!--Navigation Bar-->
-    <nav>
-        <div class="logo">
-            <h1>Federated Insurance</h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Dashboard</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="calendar.html">Calendar</a></li>
-            <li><a href="reports.html">Reports</a></li>
-            <li><a href="settings.html">Settings</a></li>
-        </ul>
-        <div class="tab">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
-        
-    <h2>Contact List</h2>
+    <div class="sidebar">
+        <div class="sidebar-container">
+            <div class="brand">
+                <h2>
+                    <img src="FederatedInsurance.png" alt="">
+                </h2>
+            </div>
+            <div class="sidebar-avatar">
+                <div>
+                    <img src="avatarUser.png" alt="">
+                </div>
+                <div class="avatar-info">
+                    <div class="avatar-text">
+                        <h4>Nick Wilson</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="las la-home"></span>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contacts.html" class="active">
+                            <span class="las la-address-card"></span>
+                            <span>Contacts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendar.html">
+                            <span class="las la-calendar"></span>
+                            <span>Calendar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reports.html">
+                            <span class="las la-chart-bar"></span>
+                            <span>Reports</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="products.html">
+                        <span class="las la-briefcase"></span>
+                        <span>Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html">
+                            <span class="las la-bell"></span>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div class="header-title-wrapper">
+                <div class="header-title">
+                    <h2>Contact List</h2>
+                </div>
+            </div>
+        </header>
+    </div>
     <div class="cm-table-container" id="cmsTableContainer">
         <div class="cm-table-row">
             <div class="cm-table-column cm-name cm-header">Name</div>
@@ -68,7 +117,7 @@
         <button id="newPersonSubmitButton">Submit</button>
         <button id="newCancelButton">Cancel</button>
     </div>
-    <script src="app.js"></script>
+
     <script src="contacts.js"></script>
 </body>
 </html>

@@ -6,7 +6,6 @@ let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('e
 const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
 const deleteEventModal= document.getElementById('deleteEventModal');
-const backDrop = document.getElementById('modalBackDrop');
 const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -25,7 +24,6 @@ function openModal(date)
     {
         newEventModal.style.display = 'block'; 
     }
-    backDrop.style.display = 'block'; 
 }
 
 function load() 
@@ -96,7 +94,6 @@ function closeModal()
     eventTitleInput.classList.remove('error');
     newEventModal.style.display = 'none';
     deleteEventModal.style.display = 'none';
-    backDrop.style.display = 'none';
     eventTitleInput.value = '';
     clicked = null;
     load();
