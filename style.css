@@ -1,136 +1,286 @@
 *
 {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+    padding: 0; 
+    margin: 0; 
+    text-decoration: none;
     font-family: 'Abel', sans-serif;
+    list-style-type: none; 
+    box-sizing: border-box; 
 }
 
-/* Navigation bar */
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #B30A1E;
-}
-
-.logo
+body
 {
-    color: #221E22;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 22px;
+    background: #FFFFFF;
+    overflow-x: hidden; 
 }
 
-.nav-links
-{
-    display: flex;
-    justify-content: space-around;
-    width: 32%;
-}
-
-    .nav-links li
-    {
-        list-style: none;
-    }
-
-    .nav-links a
-    {
-        color: #221E22;
-        text-decoration: none;
-        letter-spacing: 3px;
-        font-weight: bold;
-        font-size: 14px;
-    }
-
-.tab
+/*
+#menu-toggle 
 {
     display: none;
+}
+
+#menu-toggle:checked ~ .sidebar
+{
+    left: -345px;
+}
+#menu-toggle:checked ~ .main-content
+{
+    margin-left: 0;
+    width: 100vw; 
+}
+*/
+
+img
+{
+    width: 100%; 
+    height: 100%; 
+}
+
+.brand 
+{
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar
+{
+    width: 345px;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    padding: 1rem 1.2rem;
+    transition: left 300ms;
+}
+
+.sidebar-container
+{
+    height: 100%;
+    width: 100%; 
+    border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 2px 2px 16px;
+    padding: 1.2rem;
+    overflow-y: auto;
+}
+
+.sidebar-avatar 
+{
+    display: grid;
+    grid-template-columns: 35px auto;
+    align-items: center;
+    border: 1px solid #CCC;
+    padding: .25rem .5rem;
+    border-radius: 7px;
+    margin: 2rem 0rem; 
+}
+
+.avatar-info
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12px;
+    align-items: center;
+}
+
+.sidebar-menu li
+{
+    color: #221E22;
+    margin-bottom: .5rem;
+}
+
+.sidebar-menu a
+{
+    color: #221E22;
+    display: block;
+    padding: .7rem 0rem;
+}
+
+.sidebar-menu a.active
+{
+    background: #B30A1E9E;
+    padding: .7rem;
+    border-radius: 7px;
+}
+
+.sidebar-menu a span:first-child
+{
+    display: inline-block; 
+    margin-right: .8rem;
+    font-size: 1.6rem;
+    color: #221E22;
+}
+
+.sidebar-container::-webkit-scrollbar
+{
+    width: 6px;
+}
+.sidebar-container::-webkit-scrollbar-track
+{
+    background: #F1F1F1;
+}
+.sidebar-container::-webkit-scrollbar-thumb
+{
+    background: #888;
+    border-radius: 10px;
+}
+.sidebar-container::-webkit-scrollbar-thumb:hover
+{
+    background: #555;
+}
+
+.main-content
+{
+    margin-left: 345px;
+    width: calc(100vw - 345px);
+    padding: 1rem 1.2rem; 
+    padding-right: 2rem;
+    transition: margin-left 300ms;
+
+}
+
+.buttonMain
+{
+    width: 90px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px #D9E4E8;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #221E22;
+    align-items: center;
+}
+
+header
+{
+    display: flex; 
+    justify-content: space-between;
+    padding-top: .5rem;
+}
+
+.header-title-wrapper 
+{
+    display: flex; 
+}
+
+.header-title-wrapper label
+{
+    display: inline-block;
+    color: #221E22;
+    margin-right: 1rem;
+    font-size: 1.8rem; 
     cursor: pointer;
 }
 
-    .tab div
-    {
-        width: 25px;
-        height: 4px;
-        background-color: #221E22;
-        margin: 5px;
-        transition: all 0.3s ease;
-    }
-
-@media screen and (max-width:1024px)
+.header-title h2
 {
-    .nav-links
-    {
-        width: 60%;
-    }
+    color: #221E22;
+    font-weight: 600;
 }
 
-@media screen and (max-width:768px)
+.header-title p
 {
-    body
-    {
-        overflow-x: hidden;
-    }
+    color: #221E22;
+    font-size: .9rem;
+}
 
-    .nav-links
+.header-title p span
+{
+    color: #B30A1E; 
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+.main
+{
+    padding-top: 2rem;
+}
+
+.analytics
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: #888;
+    padding: 1.5rem; 
+    grid-gap: 0rem 4rem;
+}
+
+.overlay
+{
+    position: fixed;
+    width: 100%;
+    height: 100%; 
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.overlay label
+{
+    display: block; 
+    height: 100%; 
+    width: 100%; 
+}
+
+/* 
+Desktop 
+@media only screen and (max-width:1024px) 
+{
+    .sidebar
     {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #B30A1E;
-        display: flex;
-        flex-direction: column;
+        left: -345px; 
+        z-index: 30; 
+    }
+    .main-content
+    {
+        width: 100vw; 
+        margin-left: 0; 
+    }
+    #menu-toggle:checked ~ .sidebar
+    {
+        left: 0;
+    }
+    #menu-toggle:checked ~ .overlay
+    {
+        display: block;  
+        text-align: right; 
+    }
+}
+*/
+
+/* 
+Tablet 
+@media only screen and (max-width:768px)
+{
+    .analytics
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+*/
+
+/* 
+Mobile 
+@media only screen and (max-width: 480px)
+{
+    header, .header-title-wrapper
+    {
         align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.4s ease-in;
     }
-
-        .nav-links li
-        {
-            opacity: 1;
-        }
-
-    .tab
+    .header-title h2
     {
-        display: block;
+        font-size: 1.2rem;
     }
-}
-
-.nav-active
-{
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade
-{
-    from
+    .header-title p
     {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-
-    to
-    {
-        opacity: 1;
-        transform: translateX(0px);
+        display: none;
     }
 }
-
-.toggle .line1
-{
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2
-{
-    opacity: 0;
-}
-
-.toggle .line3
-{
-    transform: rotate(45deg) translate(-5px, -6px);
-}
+*/
