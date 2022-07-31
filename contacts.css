@@ -10,6 +10,12 @@ body
     margin: 0;
 }
 
+.main-content h2
+{
+    position: relative;
+    top: 0rem;
+}
+
 .brand
 {
     margin-left: auto;
@@ -22,7 +28,7 @@ body
     margin-top: 50px;
     width: 80%;
     margin: auto;
-    margin-left: 20.65rem;
+    margin-left: 25rem;
 }
 
 .cm-table-row
@@ -127,6 +133,8 @@ body
     margin-right: auto;
     align-items: center;
     background-color: #FFFFFF;
+    bottom: 10rem;
+    align-items: center;
 }
 
 #newPersonModal input
