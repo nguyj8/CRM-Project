@@ -9,7 +9,7 @@ CRM Roles
  
 # What I Learned 
 * Create wireframe: space allocation, content prioritization, available functionalities, and behaviors 
-* JavaScript Concepts: IIFE, Hoisting, Closures 
+* JavaScript concepts: IIFE, Hoisting, Closures 
 * Connect MySQL database with Node.JS file 
 * Utilize terminal with the assistance of Homebrew to install npm and other packages to establish a connection
 * Configure local MySQL database and transform test data into CSVs to efficiently utilize data into local DB 
