@@ -1,5 +1,5 @@
 # Customer Relationship Management
-A customer relationship management prototype requested by a client, Nick Wilson, who works at Federated Insurance. The client, Nick Wilson, asked to develop a web application to contact current and potential customers, view customer accounts that includes their personal information, background information, join date, insurance type, and many more criterions, add an agenda list and or calendar with notifications for reminders, and a dashboard page with a quick one stop feature. The entirety of the CIS 380 project, CRM prototype, assigned a deadline of 4 weeks to complete. 
+A customer relationship management prototype requested by a client, Nick Wilson, who works at Federated Insurance. The client, Nick Wilson, asked to develop a web application to contact current and potential customers, view customer accounts that includes their personal information, background information, join date, insurance type, and many more criterions, add an agenda list and or calendar with notifications for reminders, and a dashboard page with a quick one stop feature. The entirety of the CIS 380 project, CRM prototype, was assigned a deadline of 4 weeks to complete.  
 
 CRM Roles
 * J Nguyen - Full Stack 
